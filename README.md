@@ -1,0 +1,1 @@
+# Small-Object-Detection-in-Drone-Imagery-with-Slicing-and-Efficient-Detectors
