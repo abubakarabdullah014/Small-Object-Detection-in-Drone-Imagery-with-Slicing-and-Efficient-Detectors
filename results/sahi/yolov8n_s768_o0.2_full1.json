@@ -1,0 +1,31 @@
+{
+  "mode": "sahi",
+  "model": "yolov8n",
+  "slice_size": 768,
+  "overlap": 0.2,
+  "with_full": true,
+  "metrics": {
+    "AP": 0.28389693151816076,
+    "AP50": 0.431114468386969,
+    "AP75": 0.296232040492954,
+    "AP_small": 0.1889312779047935,
+    "AP_medium": 0.33001109318390787,
+    "AP_large": 0.3809182764305209,
+    "AR_small": 0.2391896525483666,
+    "AR_medium": 0.4484426997371988,
+    "AR_large": 0.49273504273504276,
+    "AR100": 0.4022814635211626
+  },
+  "latency": {
+    "mean_ms": 1661.4145540001846,
+    "median_ms": 1212.0727999999872,
+    "std_ms": 1079.2095378362592,
+    "min_ms": 800.6574000010005,
+    "max_ms": 5649.950400000307,
+    "n_repeats": 50,
+    "slices_per_image": 2.18,
+    "forward_passes": 2.18
+  },
+  "n_images": 50,
+  "eval_gt": "D:\\Abubakar Data\\Research\\results\\sahi\\_gt_subsets\\val_first50.json"
+}

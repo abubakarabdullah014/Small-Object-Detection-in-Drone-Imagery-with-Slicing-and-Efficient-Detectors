@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Local caches / OS
+.hf_cache/
+.cache/
+.DS_Store
+Thumbs.db
+*.log
+
+# Large datasets (download via convert_visdrone.py)
+data/raw/
+data/coco/
+data/domain_shift/
+
+# Model weights and exports (download via zoo.py)
+models/
+*.pt
+*.onnx
+*.engine
+*_openvino_model/
+
+# Heavy experiment artifacts
+results/**/*_dets.json
+results/**/_gt_subsets/
+results/**/*_log.txt
+results/**/*.log
+results/**/*.png
+results/**/*.jpg
+paper/_overleaf_pack/
+paper/*.zip
+paper/*.pdf
+
+# Paper is submitted separately to the journal — keep local only
+paper/
+
+# Misc
+*.tmp
+.ipynb_checkpoints/

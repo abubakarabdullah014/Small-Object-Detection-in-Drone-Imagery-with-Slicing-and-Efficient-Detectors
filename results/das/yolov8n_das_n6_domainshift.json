@@ -1,0 +1,52 @@
+{
+  "mode": "das",
+  "model": "yolov8n",
+  "das": {
+    "grid_rows": 32,
+    "grid_cols": 32,
+    "coarse_conf": 0.05,
+    "final_conf": 0.25,
+    "tau": 0.15,
+    "k": 8.0,
+    "slice_min": 256,
+    "slice_max": 1024,
+    "default_slice": 512,
+    "overlap_ratio": 0.2,
+    "n_max": 6,
+    "use_coarse_prior": true,
+    "use_image_prior": true,
+    "scale_adaptive": true,
+    "fusion": "wbf",
+    "border_margin": 8,
+    "border_weight": 0.5,
+    "scale_gate": 96,
+    "wbf_iou_thr": 0.55,
+    "image_prior_weight": 0.35,
+    "coarse_prior_weight": 0.65
+  },
+  "metrics": {
+    "AP": 0.2041954686097877,
+    "AP50": 0.3395625325058396,
+    "AP75": 0.20978824720508316,
+    "AP_small": 0.16085168494455174,
+    "AP_medium": 0.25825045272587843,
+    "AP_large": 0.49793990743612176,
+    "AR_small": 0.2546605949451635,
+    "AR_medium": 0.3552750983817773,
+    "AR_large": 0.5389455782312926,
+    "AR100": 0.30390105363121295
+  },
+  "latency": {
+    "mean_ms": 3247.4149012496127,
+    "median_ms": 3239.636949994747,
+    "std_ms": 326.1306095379097,
+    "min_ms": 2544.915599995875,
+    "max_ms": 4608.749200000602,
+    "n_repeats": 80,
+    "slices_per_image": 5.9875,
+    "forward_passes": 6.9875
+  },
+  "n_images": 80,
+  "tag": "yolov8n_das_n6_domainshift",
+  "eval_gt": "data\\domain_shift\\person_crops.json"
+}

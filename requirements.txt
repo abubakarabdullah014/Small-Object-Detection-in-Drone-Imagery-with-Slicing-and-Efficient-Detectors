@@ -1,0 +1,21 @@
+# Pinned for CPU-only VisDrone + SAHI + DAS research codebase
+torch>=2.1.0
+torchvision>=0.16.0
+ultralytics>=8.3.0
+sahi==0.12.8
+openvino>=2024.0.0
+pycocotools>=2.0.7
+huggingface_hub>=0.23.0
+onnx>=1.16.0
+onnxruntime>=1.18.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+Pillow>=10.0.0
+PyYAML>=6.0
+tqdm>=4.66.0
+scipy>=1.11.0
+transformers>=4.40.0
+ensemble-boxes>=1.0.9
+tabulate>=0.9.0

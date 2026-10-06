@@ -1,0 +1,48 @@
+das:
+  border_margin: 8
+  border_weight: 0.5
+  coarse_conf: 0.05
+  coarse_prior_weight: 0.65
+  default_slice: 512
+  final_conf: 0.25
+  fusion: wbf
+  grid_cols: 32
+  grid_rows: 32
+  image_prior_weight: 0.35
+  k: 8.0
+  n_max: 6
+  overlap_ratio: 0.2
+  scale_adaptive: true
+  scale_gate: 96
+  slice_max: 1024
+  slice_min: 256
+  tau: 0.15
+  use_coarse_prior: true
+  use_image_prior: true
+  wbf_iou_thr: 0.55
+models:
+  cross_dataset:
+  - dfine_n
+  - dfine_s
+  in_domain:
+  - yolov8n
+  - yolov8s
+  - yolov11n
+  - yolov11s
+runtime:
+  conf: 0.25
+  device: cpu
+  imgsz: 640
+  latency_repeats: 3
+  num_threads: 4
+  warmup_iters: 3
+sahi:
+  overlaps:
+  - 0.2
+  slice_sizes:
+  - 384
+  - 512
+  - 640
+  - 768
+  with_full_image:
+  - true

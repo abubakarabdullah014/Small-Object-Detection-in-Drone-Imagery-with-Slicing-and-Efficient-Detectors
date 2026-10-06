@@ -1,0 +1,52 @@
+{
+  "mode": "das",
+  "model": "yolov8n",
+  "das": {
+    "grid_rows": 32,
+    "grid_cols": 32,
+    "coarse_conf": 0.05,
+    "final_conf": 0.25,
+    "tau": 0.15,
+    "k": 10.0,
+    "slice_min": 256,
+    "slice_max": 1024,
+    "default_slice": 512,
+    "overlap_ratio": 0.2,
+    "n_max": 8,
+    "use_coarse_prior": true,
+    "use_image_prior": true,
+    "scale_adaptive": true,
+    "fusion": "wbf",
+    "border_margin": 8,
+    "border_weight": 0.5,
+    "scale_gate": 96,
+    "wbf_iou_thr": 0.55,
+    "image_prior_weight": 0.35,
+    "coarse_prior_weight": 0.65
+  },
+  "metrics": {
+    "AP": 0.2831161589804929,
+    "AP50": 0.43373927854652927,
+    "AP75": 0.3016239199441664,
+    "AP_small": 0.1206123395710211,
+    "AP_medium": 0.3582492071948137,
+    "AP_large": 0.6515060478252046,
+    "AR_small": 0.199387759726417,
+    "AR_medium": 0.5016078136508524,
+    "AR_large": 0.6939032405766277,
+    "AR100": 0.3906700231476631
+  },
+  "latency": {
+    "mean_ms": 6370.286294000034,
+    "median_ms": 6054.281799999444,
+    "std_ms": 1286.992765467152,
+    "min_ms": 3778.002800001559,
+    "max_ms": 9099.991299997782,
+    "n_repeats": 50,
+    "slices_per_image": 7.92,
+    "forward_passes": 8.92
+  },
+  "n_images": 50,
+  "tag": "yolov8n_das_n8_tau0.15_k10.0",
+  "eval_gt": "D:\\Abubakar Data\\Research\\results\\das\\tune\\_gt_subsets\\tune_200_seed42_first50.json"
+}

@@ -1,0 +1,31 @@
+{
+  "mode": "sahi",
+  "model": "yolov8n",
+  "slice_size": 512,
+  "overlap": 0.2,
+  "with_full": true,
+  "metrics": {
+    "AP": 0.2337909010059894,
+    "AP50": 0.39700771542269275,
+    "AP75": 0.23652610168019353,
+    "AP_small": 0.17725033315772973,
+    "AP_medium": 0.31742225221119996,
+    "AP_large": 0.34536679373053664,
+    "AR_small": 0.2695183865035979,
+    "AR_medium": 0.45877345141956577,
+    "AR_large": 0.4618488444320844,
+    "AR100": 0.34807312373658483
+  },
+  "latency": {
+    "mean_ms": 5743.0904483576505,
+    "median_ms": 5283.329549998598,
+    "std_ms": 1912.9891570602488,
+    "min_ms": 3250.700399999914,
+    "max_ms": 14850.290700000187,
+    "n_repeats": 548,
+    "slices_per_image": 3.9525547445255476,
+    "forward_passes": 3.9525547445255476
+  },
+  "n_images": 548,
+  "eval_gt": "D:\\Abubakar Data\\Research\\data\\coco\\val.json"
+}
